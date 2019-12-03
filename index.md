@@ -11,15 +11,20 @@ Jitesh Golatkar	801073392
 DataSet: WISDM Smartphone and Smartwatch Activity and Biometrics Dataset Data Set
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
+The accelerometer form devices measures the accelaration in 3 dimessions, along with x axis, y axis and z axis. X axis accelaration describes horizontal movement body. Y axis accelaration describes upward and downward movement of body. Z axis accelaration describes forward movement of body.
+
 Feature Selection and Data Preparation:
     We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities.
     
 Average acceleration:    
    We calculated average accelaration for each axis of the record
+   
 Variance:
    We calculated variance of accelaration for each axis of the record
+   
 Average absolute difference:
    We calculated average absolute differencee of accelaration for each axis of the record
+   
 Average resultant acceleration (1/n * sum [√(x² + y² + z²)])
 Average time between peaks (max) (Y-axis)
 
