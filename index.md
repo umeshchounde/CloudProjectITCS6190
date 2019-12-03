@@ -1,15 +1,28 @@
 ## Title: Human Activity Recognition using Smartphone and Smartwatch Sensor Data
 
+Project Group:
 Umesh Chounde	801075505
 Jitesh Golatkar	801073392
 
-Abstract:
-Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. In this project we will use such large dataset and process it using distributed computing frameworks like Spark as well as use one of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
+4.Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. In this project we will use such large dataset and process it using distributed computing frameworks like Spark as well as use one of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
+
+5.WISDM dataset consist of raw accelerometer and gyroscope data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
 
 DataSet: WISDM Smartphone and Smartwatch Activity and Biometrics Dataset Data Set
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
-WISDM dataset consist of raw accelerometer and gyroscope data collected from smartphones and smartwatches. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
+Feature Selection and Data Preparation:
+    We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities.
+    
+Average acceleration:    
+   We calculated average accelaration for each axis of the record
+Variance:
+   We calculated variance of accelaration for each axis of the record
+Average absolute difference:
+   We calculated average absolute differencee of accelaration for each axis of the record
+Average resultant acceleration (1/n * sum [√(x² + y² + z²)])
+Average time between peaks (max) (Y-axis)
+
 
 
 
