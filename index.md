@@ -15,7 +15,7 @@ DataSet: WISDM Smartphone and Smartwatch Activity and Biometrics Dataset Data Se
 The accelerometer form devices measures the accelaration in 3 dimessions, along with x axis, y axis and z axis. X axis accelaration describes horizontal movement body. Y axis accelaration describes upward and downward movement of body. Z axis accelaration describes forward movement of body.
 
 Feature Selection and Data Preparation:
-    We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. After thorough study and research we came up with following features might be helpful for building a model. 
+   We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. After thorough study and research we came up with following features might be helpful for building a model. 
     
 Average acceleration:    
    We calculated average accelaration for each axis of the record
