@@ -6,6 +6,12 @@ Jitesh Golatkar	801073392
 Abstract:
 Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. In this project we will use such large dataset and process it using distributed computing frameworks like Spark as well as use one of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
 
+DataSet: WISDM Smartphone and Smartwatch Activity and Biometrics Dataset Data Set
+http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+
+
+WISDM dataset consist of raw accelerometer and gyroscope data collected from smartphones and smartwatches. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
+
+
 
 You can use the [editor on GitHub](https://github.com/umeshchounde/CloudProjectITCS6190/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
