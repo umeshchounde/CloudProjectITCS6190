@@ -1,5 +1,12 @@
 ## Title: Human Activity Recognition using Smartphone and Smartwatch Sensor Data
 
+Umesh Chounde	801075505
+Jitesh Golatkar	801073392
+
+Abstract:
+Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. In this project we will use such large dataset and process it using distributed computing frameworks like Spark as well as use one of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
+
+
 You can use the [editor on GitHub](https://github.com/umeshchounde/CloudProjectITCS6190/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
