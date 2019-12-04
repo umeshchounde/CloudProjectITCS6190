@@ -28,7 +28,7 @@ The accelerometer form devices measures the acceleration in 3 dimensions, along 
 
 ## **Feature Selection and Data Preparation:**
 <p align="justify">
-We visualized small set of data for each activity such as walking and jogging we came to know that acceleration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelerations that can help us differentiate activity, because jogging will be having most peak acceleration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities based on activity periodicity. In case of normal activity such as sitting we get constant acceleration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.</p>
+We studied the oringinal research paper and small set of data for each activity such as walking and jogging. We came to know that acceleration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelerations that can help us differentiate activity, because jogging will be having most peak acceleration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities based on activity periodicity. In case of normal activity such as sitting we get constant acceleration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each user.</p>
     
 ### Average acceleration:
 <p align="justify">
@@ -53,11 +53,6 @@ Initially we calculated global maxima for each axis acceleration. Selected all t
 
 ## 6. **Algorithms**
 
-### Decision Tree
-<p align="justify">
-Initially we used Decision Tree for classification of the activities.
-</p>
-
 ### Naive Bayes Classification 
 *   Implementation of Naive Bayes using Spark from scratch.
 *   Since the data attributes are continuous values, we have to use Gaussian Naive Bayes to calculate probabilities.
@@ -69,6 +64,14 @@ Initially we used Decision Tree for classification of the activities.
 
 <img src="{{ site.baseurl }}/images/formula.PNG">
 
+### Decision Tree
+<p align="justify">
+*  Implemented Decision Tree using MLLib library.
+    
+   (https://spark.apache.org/docs/latest/ml-classification-regression.html#decision-trees)
+</p>
+
+
 ## 8,9.**Results**
 
 ### Phone Accelerometer
@@ -76,15 +79,13 @@ Initially we used Decision Tree for classification of the activities.
 
 Confusion matrix:
 
-322.0  4.0    77.0   8.0    0.0
-
-11.0   391.0  10.0   0.0    1.0
-
-59.0   6.0    321.0  0.0    0.0
-
-10.0   2.0    16.0   311.0  19.0
-
-6.0    3.0    12.0   12.0   357.0
+|  1   |  2   |  3   |  4   |  5   |
+| --- | --- | --- | --- | --- |
+|**1**|322.0 | 4.0  |  77.0 |  8.0  |  0.0  |
+|**2**|11.0 |  391.0 | 10.0 |  0.0  |  1.0|
+|**3**|59.0 |  6.0  |  321.0 | 0.0  |  0.0|
+|**4**|10.0 |  2.0  |  16.0  | 311.0 | 19.0|
+|**5**|6.0  |  3.0  |  12.0 |  12.0 |  357.0|
 
 Accuracy = 86.92543411644536
 
@@ -111,15 +112,13 @@ Weighted false positive rate = 0.032965
 
 Confusion matrix:
 
-183.0  26.0   187.0  13.0   2.0
-
-32.0   374.0  5.0    2.0    0.0
-
-63.0   3.0    268.0  27.0   25.0
-
-4.0    14.0   6.0    265.0  69.0
-
-10.0   4.0    9.0    11.0   356.0
+|  1   |  2   |  3   |  4   |  5   |
+| --- | --- | --- | --- | --- |
+|**1**|183.0|  26.0 |  187.0 | 13.0 |  2.0
+|**2**|32.0 |  374.0 | 5.0 |   2.0  |  0.0
+|**3**|63.0 |  3.0  |  268.0 | 27.0 |  25.0
+|**4**|4.0  |  14.0 |  6.0  |  265.0 | 69.0
+|**5**|10.0 |  4.0  |  9.0  |  11.0  | 356.0
 
 Accuracy = 73.8508682328907
 
@@ -147,15 +146,13 @@ Weighted false positive rate = 0.065417
 
 Confusion matrix:
 
-199.0  4.0    104.0  2.0    27.0
-
-2.0    276.0  9.0    9.0    4.0
-
-25.0   1.0    262.0  4.0    8.0
-
-6.0    1.0    17.0   270.0  22.0
-
-7.0    4.0    27.0   26.0   248.0
+|  1   |  2   |  3   |  4   |  5   |
+| --- | --- | --- | --- | --- |
+|**1**|199.0 | 4.0 |   104.0 | 2.0  |  27.0
+|**2**|2.0   | 276.0 | 9.0  |  9.0  |  4.0
+|**3**|25.0  | 1.0   | 262.0 | 4.0  |  8.0
+|**4**|6.0   | 1.0  |  17.0 |  270.0 | 22.0
+|**5**|7.0   | 4.0  |  27.0 |  26.0  | 248.0
 
 Accuracy = 80.24296675191816
 
