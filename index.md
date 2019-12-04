@@ -57,7 +57,7 @@ Initially we used Decision Tree for classifiaction of the activities.
 
 ### Naive Bayes Classification 
 
-## 8,9.**Results and Performance evaluation**
+## 8,9.**Results**
 
 ### Phone Acelerometer
 ---------------- Classification Using Decision Tree ----------------
@@ -229,28 +229,51 @@ Weighted false positive rate = 0.048698
 ---------------- Classification Using Naive Bayes ----------------
 
 Confusion matrix:
+
 64.0  47.0   169.0  2.0    54.0
+
 13.0  280.0  6.0    0.0    1.0
+
 38.0  2.0    208.0  3.0    49.0
+
 18.0  5.0    21.0   207.0  65.0
+
 12.0  7.0    34.0   32.0   227.0
+
 Accuracy = 63.04347826086957
+
 Class 1.000000 precision = 0.441379
+
 Class 1.000000 recall = 0.190476
+
 Class 1.000000 F1 score = 0.266112
+
 Class 2.000000 precision = 0.821114
+
 Class 2.000000 recall = 0.933333
+
 Class 2.000000 F1 score = 0.873635
+
 Class 3.000000 precision = 0.474886
+
 Class 3.000000 recall = 0.693333
+
 Class 3.000000 F1 score = 0.563686
+
 Class 4.000000 precision = 0.848361
+
 Class 4.000000 recall = 0.655063
+
 Class 4.000000 F1 score = 0.739286
+
 Class 5.000000 precision = 0.573232
+
 Class 5.000000 recall = 0.727564
+
 Class 5.000000 F1 score = 0.641243
+
 Weighted precision = 0.629178
+
 Weighted recall = 0.630435
 Weighted F1 score = 0.610161
 Weighted false positive rate = 0.091249
