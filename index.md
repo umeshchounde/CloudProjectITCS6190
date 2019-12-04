@@ -14,14 +14,13 @@ Today there are billions of people carrying smart devices such as smartphones, f
 <p align="justify">
 In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognize human activity like walking, jogging etc.
 
-5.WISDM dataset consist of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
-
+5.WISDM dataset consist of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.</p>
 Dataset: 
 WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
 The accelerometer form devices measures the acceleration in 3 dimensions, along with x axis, y axis and z axis.
-</p>
+
 * X axis acceleration describes horizontal movement body. 
 * Y axis acceleration describes upward and downward movement of body. 
 * Z axis acceleration describes forward movement of body.
@@ -61,7 +60,7 @@ Initially we used Decision Tree for classification of the activities.
 ### Naive Bayes Classification 
 
 ## 8,9.**Results**
-<p align="right">
+
 ### Phone Accelerometer
 ---------------- Classification Using Decision Tree ----------------
 
@@ -79,35 +78,15 @@ Confusion matrix:
 
 Accuracy = 86.92543411644536
 
-Class 1.000000 precision = 0.789216
+Class 1.000000 precision = 0.789216     Class 1.000000 recall = 0.783455    Class 1.000000 F1 score = 0.786325
 
-Class 1.000000 recall = 0.783455
+Class 2.000000 precision = 0.963054     Class 2.000000 recall = 0.946731    Class 2.000000 F1 score = 0.954823
 
-Class 1.000000 F1 score = 0.786325
+Class 3.000000 precision = 0.736239     Class 3.000000 recall = 0.831606    Class 3.000000 F1 score = 0.781022
 
-Class 2.000000 precision = 0.963054
+Class 4.000000 precision = 0.939577     Class 4.000000 recall = 0.868715    Class 4.000000 F1 score = 0.902758
 
-Class 2.000000 recall = 0.946731
-
-Class 2.000000 F1 score = 0.954823
-
-Class 3.000000 precision = 0.736239
-
-Class 3.000000 recall = 0.831606
-
-Class 3.000000 F1 score = 0.781022
-
-Class 4.000000 precision = 0.939577
-
-Class 4.000000 recall = 0.868715
-
-Class 4.000000 F1 score = 0.902758
-
-Class 5.000000 precision = 0.946950
-
-Class 5.000000 recall = 0.915385
-
-Class 5.000000 F1 score = 0.930900
+Class 5.000000 precision = 0.946950     Class 5.000000 recall = 0.915385    Class 5.000000 F1 score = 0.930900
 
 Weighted precision = 0.874349
 
@@ -133,35 +112,15 @@ Confusion matrix:
 
 Accuracy = 73.8508682328907
 
-Class 1.000000 precision = 0.626712
+Class 1.000000 precision = 0.626712     Class 1.000000 recall = 0.445255    Class 1.000000 F1 score = 0.520626
 
-Class 1.000000 recall = 0.445255
+Class 2.000000 precision = 0.888361     Class 2.000000 recall = 0.905569    Class 2.000000 F1 score = 0.896882
 
-Class 1.000000 F1 score = 0.520626
+Class 3.000000 precision = 0.564211     Class 3.000000 recall = 0.694301    Class 3.000000 F1 score = 0.622532
 
-Class 2.000000 precision = 0.888361
+Class 4.000000 precision = 0.833333     Class 4.000000 recall = 0.740223    Class 4.000000 F1 score = 0.784024
 
-Class 2.000000 recall = 0.905569
-
-Class 2.000000 F1 score = 0.896882
-
-Class 3.000000 precision = 0.564211
-
-Class 3.000000 recall = 0.694301
-
-Class 3.000000 F1 score = 0.622532
-
-Class 4.000000 precision = 0.833333
-
-Class 4.000000 recall = 0.740223
-
-Class 4.000000 F1 score = 0.784024
-
-Class 5.000000 precision = 0.787611
-
-Class 5.000000 recall = 0.912821
-
-Class 5.000000 F1 score = 0.845606
+Class 5.000000 precision = 0.787611     Class 5.000000 recall = 0.912821    Class 5.000000 F1 score = 0.845606
 
 Weighted precision = 0.739407
 
@@ -170,9 +129,7 @@ Weighted recall = 0.738509
 Weighted F1 score = 0.732969
 
 Weighted false positive rate = 0.065417
-</p>
 
-<p align="right">
 ### Watch Accelerometer
 
 ---------------- Classification Using Decision Tree ----------------
@@ -191,35 +148,15 @@ Confusion matrix:
 
 Accuracy = 80.24296675191816
 
-Class 1.000000 precision = 0.832636
+Class 1.000000 precision = 0.832636     Class 1.000000 recall = 0.592262    Class 1.000000 F1 score = 0.692174
 
-Class 1.000000 recall = 0.592262
+Class 2.000000 precision = 0.965035     Class 2.000000 recall = 0.920000    Class 2.000000 F1 score = 0.941980
 
-Class 1.000000 F1 score = 0.692174
+Class 3.000000 precision = 0.625298     Class 3.000000 recall = 0.873333    Class 3.000000 F1 score = 0.728790
 
-Class 2.000000 precision = 0.965035
+Class 4.000000 precision = 0.868167     Class 4.000000 recall = 0.854430    Class 4.000000 F1 score = 0.861244
 
-Class 2.000000 recall = 0.920000
-
-Class 2.000000 F1 score = 0.941980
-
-Class 3.000000 precision = 0.625298
-
-Class 3.000000 recall = 0.873333
-
-Class 3.000000 F1 score = 0.728790
-
-Class 4.000000 precision = 0.868167
-
-Class 4.000000 recall = 0.854430
-
-Class 4.000000 F1 score = 0.861244
-
-Class 5.000000 precision = 0.802589
-
-Class 5.000000 recall = 0.794872
-
-Class 5.000000 F1 score = 0.798712
+Class 5.000000 precision = 0.802589     Class 5.000000 recall = 0.794872    Class 5.000000 F1 score = 0.798712
 
 Weighted precision = 0.819446
 
@@ -245,35 +182,15 @@ Confusion matrix:
 
 Accuracy = 63.04347826086957
 
-Class 1.000000 precision = 0.441379
+Class 1.000000 precision = 0.441379     Class 1.000000 recall = 0.190476    Class 1.000000 F1 score = 0.266112
 
-Class 1.000000 recall = 0.190476
+Class 2.000000 precision = 0.821114     Class 2.000000 recall = 0.933333    Class 2.000000 F1 score = 0.873635
 
-Class 1.000000 F1 score = 0.266112
+Class 3.000000 precision = 0.474886     Class 3.000000 recall = 0.693333    Class 3.000000 F1 score = 0.563686
 
-Class 2.000000 precision = 0.821114
+Class 4.000000 precision = 0.848361     Class 4.000000 recall = 0.655063    Class 4.000000 F1 score = 0.739286
 
-Class 2.000000 recall = 0.933333
-
-Class 2.000000 F1 score = 0.873635
-
-Class 3.000000 precision = 0.474886
-
-Class 3.000000 recall = 0.693333
-
-Class 3.000000 F1 score = 0.563686
-
-Class 4.000000 precision = 0.848361
-
-Class 4.000000 recall = 0.655063
-
-Class 4.000000 F1 score = 0.739286
-
-Class 5.000000 precision = 0.573232
-
-Class 5.000000 recall = 0.727564
-
-Class 5.000000 F1 score = 0.641243
+Class 5.000000 precision = 0.573232     Class 5.000000 recall = 0.727564    Class 5.000000 F1 score = 0.641243
 
 Weighted precision = 0.629178
 
@@ -285,42 +202,31 @@ Weighted false positive rate = 0.091249
 </p>
 
 ## 10.**Project Accomplishments**
-<p align="right">
 * Implemented Naive Bayes classification algorithm using Spark
 * Trained model using Decision Tree classifier in Spark MLib
 * Compared classification algorithms for activity classification
-</p>
 
 ## **Future Scope**
-<p align="left">
 * Improve Accuracy of classifier
 * Improve performance and time in data pre-processing stage
 * Determine better feature for sensor data
-</p>
 
 ## 7.**Software**
-<p align="left">
 Please find below list of different software we have used for this project
 * Spark for data extraction, model training and evaluation 
 * AWS EMR cluster for execution of the code
 * Spark MLib library for Decision Tree algorithm
-</p>
 
 ## 11.**Observations**
-<p align="left">
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
 * Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark
-</p>
 
 ## **Project Outcome**
-<p align="left">
 * Learnt to implement classification algorithm in spark 
 * Gained Hands on experience with Spark MLib, Dataset API
 * Learnt classification using raw sensor data
-</p>
 
 ## 12.**Work division**
-<p align="left">
 Umesh:
 * Feature Selection and research
 * Data Preprocessing
@@ -330,11 +236,8 @@ Jitesh:
 * Feature Selection and research
 * Classification 
 * Report writing
-</p>
 
 ## 13.**References**
-<p align="left">
 1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
-</p>
