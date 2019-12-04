@@ -59,8 +59,8 @@ Initially we used Decision Tree for classification of the activities.
 </p>
 
 ### Naive Bayes Classification 
-*   Implementation of Naive Bayes model using Spark from scratch.
-*   Since the data attributes are continuous values, we have to use normal distribution to calculate probabilities.
+*   Implementation of Naive Bayes using Spark from scratch.
+*   Since the data attributes are continuous values, we have to use Gaussian Naive Bayes to calculate probabilities.
 *   From pre-processed input LabeledPoints, we extract the RDDs for individual features.
 *   For each individual feature, we sum readings of each label using reduceByKey and take the mean and collect final result as a Map of means for each label.
 *   For each individual feature and for each label, we take squared sum of difference between each reading and mean for that label, using reduceByKey and take the mean and collect final result as a Map of variance of each label.
@@ -208,29 +208,28 @@ Weighted F1 score = 0.610161
 Weighted false positive rate = 0.091249
 
 ## **Project Accomplishments**
-* Implemented Naive Bayes classification algorithm using Spark
-* Trained model using Decision Tree classifier in Spark MLib
-* Compared classification algorithms for activity classification
+* Implemented Naive Bayes classification algorithm using Spark.
+* Trained model using Decision Tree classifier in Spark MLib.
+* Compared classification algorithms for activity classification.
 
 ## **Future Scope**
-* Improve Accuracy of classifier
-* Improve performance and time in data pre-processing stage
-* Determine better feature for sensor data
+* Improve the accuracy of the classifier.
+* Improve performance and time in data pre-processing stage.
+* Determine better feature for sensor data.
 
 ## **Software**
-Please find below list of different software we have used for this project
-* Spark for data extraction, model training and evaluation 
-* AWS EMR cluster for execution of the code
-* Spark MLib library for Decision Tree algorithm
+* Spark for data pre-processing.
+* AWS EMR cluster for execution of the code.
+* Spark MLib library for Decision Tree algorithm and Model Evaluation.
 
 ## **Observations**
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
-* Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark
+* Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark.
 
 ## Project Outcome**
-* Learnt to implement classification algorithm in spark 
-* Gained Hands on experience with Spark MLib, Dataset API
-* Learnt classification using raw sensor data
+* Learnt to implement classification algorithm in spark. 
+* Gained Hands on experience with Spark MLib, Dataset API.
+* Learnt classification using raw sensor data.
 
 ## Work division**
 Umesh:
@@ -247,3 +246,5 @@ Jitesh:
 1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
+
+3. [Naive Bayes Classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
