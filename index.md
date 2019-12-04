@@ -8,58 +8,58 @@ Jitesh Golatkar
 
 ## 4. **Project Motivation**
 
-Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. We personally used such devices for tracking the activities. We felt that it would be interesting to know how it classify activities and we decided to implement the classification algorithm we studied in this course.
+Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. We personally used such devices for tracking the activities. We felt that it would be interesting to know how it classify activities and we decided to implement the classification algorithm we studied in this course.
 
 ## 3. **Dataset Information**
-In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
+In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognize human activity like walking, jogging etc.
 
-5.WISDM dataset consist of raw accelerometer  data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
+5.WISDM dataset consist of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
 
-DataSet: 
+Dataset: 
 WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
-The accelerometer form devices measures the accelaration in 3 dimessions, along with x axis, y axis and z axis. 
-* X axis accelaration describes horizontal movement body. 
-* Y axis accelaration describes upward and downward movement of body. 
-* Z axis accelaration describes forward movement of body.
+The accelerometer form devices measures the acceleration in 3 dimensions, along with x axis, y axis and z axis. 
+* X axis acceleration describes horizontal movement body. 
+* Y axis acceleration describes upward and downward movement of body. 
+* Z axis acceleration describes forward movement of body.
 
 ## **Feature Selection and Data Preparation:**
 
-   We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelarations that can help us differentiate activity, beacause jogging will be having most peak accelaration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities on the basis of activity periodicity. In case of normal activity such as sitting we get constant accelaration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.
+   We visualized small set of data for each activity such as walking and jogging we came to know that acceleration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelerations that can help us differentiate activity, because jogging will be having most peak acceleration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities based on activity periodicity. In case of normal activity such as sitting we get constant acceleration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.
     
 ### Average acceleration:
 
-Each activity data records are divided in batches of 200 records. We calculated average accelaration for each axis of the record
+Each activity data records are divided in batches of 200 records. We calculated average acceleration for each axis of the record
    
 ### Variance:
 
-Each activity data records are divided in batches of 200 records. We calculated variance of accelaration for each axis of the record
+Each activity data records are divided in batches of 200 records. We calculated variance of acceleration for each axis of the record
    
 ### Average absolute difference:
 
-We calculated average accelaration for each axis and took absolute difference with average accelaration. Average of this absolute difference is calculated again.
+We calculated average acceleration for each axis and took absolute difference with average acceleration. Average of this absolute difference is calculated again.
    
 ### Average resultant acceleration:
 
-Average resultant is calculated using the formula.(1/n * sum [√(x² + y² + z²)])
+Average resultant is calculated using the formula. (1/n * sum [√(x² + y² + z²)])
    
 ### Average time between peaks 
 
-Initially we calculated global maxima for each axis accelaration. Selected all the other local maximum who has value more than 90% of global maxima. Then average of all such values are taken.
+Initially we calculated global maxima for each axis acceleration. Selected all the other local maximum who has value more than 90% of global maxima. Then average of all such values are taken.
 
 
 ## 6. **Algorithms**
 
 ### Decision Tree
 
-Initially we used Decision Tree for classifiaction of the activities.
+Initially we used Decision Tree for classification of the activities.
 
 ### Naive Bayes Classification 
 
 ## 8,9.**Results**
 
-### Phone Acelerometer
+### Phone Accelerometer
 ---------------- Classification Using Decision Tree ----------------
 
 Confusion matrix:
@@ -170,7 +170,7 @@ Weighted false positive rate = 0.065417
 
 
 
-### Watch Acelerometer
+### Watch Accelerometer
 
 ---------------- Classification Using Decision Tree ----------------
 
@@ -281,19 +281,19 @@ Weighted F1 score = 0.610161
 Weighted false positive rate = 0.091249
 
 
-## 10.**Project Accomplisments**
+## 10.**Project Accomplishments**
 * Implemented Naive Bayes classification algorithm using Spark
 * Trained model using Decision Tree classifier in Spark MLib
 * Compared classification algorithms for activity classification
 
 ## **Future Scope**
-* Improve Accruracy of classifier
+* Improve Accuracy of classifier
 * Improve performance and time in data pre-processing stage
 * Determine better feature for sensor data
 
 ## 7.**Software**
 
-Please find below list of different softwares we have used for this project
+Please find below list of different software we have used for this project
 * Spark for data extraction, model training and evaluation 
 * AWS EMR cluster for execution of the code
 * Spark MLib library for Decision Tree algorithm
@@ -305,7 +305,7 @@ Please find below list of different softwares we have used for this project
 
 ## **Project Outcome**
 * Learnt to implement classification algorithm in spark 
-* Gained Hands on experience with Spark MLib, Dataset api 
+* Gained Hands on experience with Spark MLib, Dataset API
 * Learnt classification using raw sensor data
 
 ## 12.**Work division**
@@ -325,6 +325,7 @@ Jitesh:
 1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
+
 
 
 
