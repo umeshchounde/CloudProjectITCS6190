@@ -12,7 +12,7 @@ Jitesh Golatkar	801073392
 5.WISDM dataset consist of raw accelerometer and gyroscope data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
 
 DataSet: 
-WISDM Smartphone and Smartwatch Activity and Biometrics Dataset Data Set
+WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
 The accelerometer form devices measures the accelaration in 3 dimessions, along with x axis, y axis and z axis. 
@@ -24,17 +24,17 @@ Feature Selection and Data Preparation:
 
    We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelarations that can help us differentiate activity, beacause jogging will be having most peak accelaration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities on the basis of activity periodicity. In case of normal activity such as sitting we get constant accelaration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.
     
-Average acceleration:    
-   Each activity data records are divided in batches of 200 records. We calculated average accelaration for each axis of the record
+Average acceleration:
+Each activity data records are divided in batches of 200 records. We calculated average accelaration for each axis of the record
    
 Variance:
-   Each activity data records are divided in batches of 200 records. We calculated variance of accelaration for each axis of the record
+Each activity data records are divided in batches of 200 records. We calculated variance of accelaration for each axis of the record
    
 Average absolute difference:
-   We calculated average accelaration for each axis and took absolute difference with average accelaration. Average of this absolute difference is calculated again.
+We calculated average accelaration for each axis and took absolute difference with average accelaration. Average of this absolute difference is calculated again.
    
 Average resultant acceleration:
-   Average resultant is calculated using the formula.(1/n * sum [√(x² + y² + z²)])
+Average resultant is calculated using the formula.(1/n * sum [√(x² + y² + z²)])
    
 Average time between peaks (max) (Y-axis)
 
