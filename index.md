@@ -275,7 +275,9 @@ Class 5.000000 F1 score = 0.641243
 Weighted precision = 0.629178
 
 Weighted recall = 0.630435
+
 Weighted F1 score = 0.610161
+
 Weighted false positive rate = 0.091249
 
 
