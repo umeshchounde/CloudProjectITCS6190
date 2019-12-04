@@ -65,7 +65,9 @@ Initially we used Decision Tree for classification of the activities.
 *   For each individual feature, we sum readings of each label using reduceByKey and take the mean and collect final result as a Map of means for each label.
 *   For each individual feature and for each label, we take squared sum of difference between each reading and mean for that label, using reduceByKey and take the mean and collect final result as a Map of variance of each label.
 *   Save the mean and variance for each feature of a label into a text file as a trained model.
-*   Formula: ![](https://github.com/jgolatkar/CloudProjectITCS6190/blob/master/images/formula.PNG)
+*   Formula: 
+
+![](https://github.com/jgolatkar/CloudProjectITCS6190/blob/master/images/formula.PNG)
 
 ## 8,9.**Results**
 
@@ -105,6 +107,7 @@ Weighted F1 score = 0.870906
 Weighted false positive rate = 0.032965
 
 ---------------- Classification Using Naive Bayes ----------------
+
 
 Confusion matrix:
 
