@@ -16,6 +16,7 @@ In this project we are the WISDM dataset released by WISDM (Wireless Sensor Data
 Information Science of Fordham Unversity. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. The activities we explored are: Walking, Jogging, Stairs, Sitting, Standing.
 We use following label mappings for the activities during classification:
 
+
 |  Walking   |  Jogging   |  Stairs   |  Sitting   |  Standing  |
 | --- | --- | --- | --- | --- |
 | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 |
