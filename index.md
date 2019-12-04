@@ -8,16 +8,17 @@ Jitesh Golatkar
 
 ## 4. **Project Motivation**
 <p align="justify">
-Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. We personally used such devices for tracking the activities. We felt that it would be interesting to know how it classify activities and we decided to implement the classification algorithm we studied in this course.</p>
+Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. Having personally used such devices for tracking the activities,  we felt that it would be interesting to know how they classify activities and thus we decided to implement the classification algorithm we studied in this course.</p>
 
 ## 3. **Dataset Information**
 <p align="justify">
-In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognize human activity like walking, jogging etc.
-
-5.WISDM dataset consist of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.</p>
+In this project we are the WISDM dataset released by WISDM (Wireless Sensor Data Mining) Lab in the Department of Computer and
+Information Science of Fordham Unversity. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. The activities we explored are: Walking, Jogging, Stairs, Sitting, Standing.
+We use following label mappings for the activities during classification:
+    1.0 Walking     2.0 Jogging     3.0 Stairs      4.0 Sitting     5.0 Standing
+</p>
 Dataset: 
-WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
-[DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
+[WISDM Smartphone and Smartwatch Activity and Biometrics Dataset](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
 The accelerometer form devices measures the acceleration in 3 dimensions, along with x axis, y axis and z axis.
 
@@ -58,6 +59,12 @@ Initially we used Decision Tree for classification of the activities.
 </p>
 
 ### Naive Bayes Classification 
+*   Implementation of Naive Bayes model using Spark from scratch.
+*   Since the data attributes are continuous values, we have to use normal distribution to calculate probabilities.
+*   From pre-processed input LabeledPoints, we extract the RDDs for individual features.
+*   For each individual feature, we sum readings of each label using reduceByKey and take the mean and collect final result as a Map of means for each label.
+*   For each individual feature and for each label, we take squared sum of difference between each reading and mean for that label, using reduceByKey and take the mean and collect final result as a Map of variance of each label.
+*   Save the mean and variance for each feature of a label into a text file as a trained model.
 
 ## 8,9.**Results**
 
@@ -199,9 +206,8 @@ Weighted recall = 0.630435
 Weighted F1 score = 0.610161
 
 Weighted false positive rate = 0.091249
-</p>
 
-## 10.**Project Accomplishments**
+## **Project Accomplishments**
 * Implemented Naive Bayes classification algorithm using Spark
 * Trained model using Decision Tree classifier in Spark MLib
 * Compared classification algorithms for activity classification
@@ -211,22 +217,22 @@ Weighted false positive rate = 0.091249
 * Improve performance and time in data pre-processing stage
 * Determine better feature for sensor data
 
-## 7.**Software**
+## **Software**
 Please find below list of different software we have used for this project
 * Spark for data extraction, model training and evaluation 
 * AWS EMR cluster for execution of the code
 * Spark MLib library for Decision Tree algorithm
 
-## 11.**Observations**
+## **Observations**
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
 * Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark
 
-## **Project Outcome**
+## Project Outcome**
 * Learnt to implement classification algorithm in spark 
 * Gained Hands on experience with Spark MLib, Dataset API
 * Learnt classification using raw sensor data
 
-## 12.**Work division**
+## Work division**
 Umesh:
 * Feature Selection and research
 * Data Preprocessing
