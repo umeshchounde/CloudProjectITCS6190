@@ -20,11 +20,12 @@ Dataset:
 WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
-The accelerometer form devices measures the acceleration in 3 dimensions, along with x axis, y axis and z axis. 
+The accelerometer form devices measures the acceleration in 3 dimensions, along with x axis, y axis and z axis.
+</p>
 * X axis acceleration describes horizontal movement body. 
 * Y axis acceleration describes upward and downward movement of body. 
 * Z axis acceleration describes forward movement of body.
-</p>
+
 ## **Feature Selection and Data Preparation:**
 <p align="justify">
 We visualized small set of data for each activity such as walking and jogging we came to know that acceleration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelerations that can help us differentiate activity, because jogging will be having most peak acceleration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities based on activity periodicity. In case of normal activity such as sitting we get constant acceleration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.</p>
@@ -60,7 +61,7 @@ Initially we used Decision Tree for classification of the activities.
 ### Naive Bayes Classification 
 
 ## 8,9.**Results**
-<p align="justify">
+<p align="right">
 ### Phone Accelerometer
 ---------------- Classification Using Decision Tree ----------------
 
@@ -169,9 +170,9 @@ Weighted recall = 0.738509
 Weighted F1 score = 0.732969
 
 Weighted false positive rate = 0.065417
+</p>
 
-
-
+<p align="right">
 ### Watch Accelerometer
 
 ---------------- Classification Using Decision Tree ----------------
@@ -284,21 +285,21 @@ Weighted false positive rate = 0.091249
 </p>
 
 ## 10.**Project Accomplishments**
-<p align="justify">
+<p align="right">
 * Implemented Naive Bayes classification algorithm using Spark
 * Trained model using Decision Tree classifier in Spark MLib
 * Compared classification algorithms for activity classification
 </p>
 
 ## **Future Scope**
-<p align="justify">
+<p align="left">
 * Improve Accuracy of classifier
 * Improve performance and time in data pre-processing stage
 * Determine better feature for sensor data
 </p>
 
 ## 7.**Software**
-<p align="justify">
+<p align="left">
 Please find below list of different software we have used for this project
 * Spark for data extraction, model training and evaluation 
 * AWS EMR cluster for execution of the code
@@ -306,20 +307,20 @@ Please find below list of different software we have used for this project
 </p>
 
 ## 11.**Observations**
-<p align="justify">
+<p align="left">
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
 * Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark
 </p>
 
 ## **Project Outcome**
-<p align="justify">
+<p align="left">
 * Learnt to implement classification algorithm in spark 
 * Gained Hands on experience with Spark MLib, Dataset API
 * Learnt classification using raw sensor data
 </p>
 
 ## 12.**Work division**
-<p align="justify">
+<p align="left">
 Umesh:
 * Feature Selection and research
 * Data Preprocessing
@@ -332,7 +333,7 @@ Jitesh:
 </p>
 
 ## 13.**References**
-<p align="justify">
+<p align="left">
 1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
