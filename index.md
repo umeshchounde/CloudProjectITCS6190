@@ -1,21 +1,25 @@
-# 1.**Title: Human Activity Recognition using Smartphone and Smartwatch Sensor Data**
+# **Human Activity Classification using Smartphone and Smartwatch Sensor Data**
 
-## 2. **Project Group:**
+## **Project Group:**
 
-Umesh Chounde
+* Umesh Chounde
 
-Jitesh Golatkar
+* Jitesh Golatkar
 
-## 4. **Project Motivation**
+## **Project Motivation**
 <p align="justify">
 Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. Having personally used such devices for tracking the activities,  we felt that it would be interesting to know how they classify activities and thus we decided to implement the classification algorithm we studied in this course.</p>
 
-## 3. **Dataset Information**
+## **Dataset Information**
 <p align="justify">
 In this project we are the WISDM dataset released by WISDM (Wireless Sensor Data Mining) Lab in the Department of Computer and
 Information Science of Fordham Unversity. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. The activities we explored are: Walking, Jogging, Stairs, Sitting, Standing.
 We use following label mappings for the activities during classification:
-    1.0 Walking     2.0 Jogging     3.0 Stairs      4.0 Sitting     5.0 Standing
+
+|  Walking   |  Jogging   |  Stairs   |  Sitting   |  Standing  |
+| --- | --- | --- | --- | --- |
+| 1.0 | 2.0 | 3.0 | 4.0 | 5.0 |
+
 </p>
 Dataset: 
 [WISDM Smartphone and Smartwatch Activity and Biometrics Dataset](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
@@ -51,7 +55,7 @@ Average resultant is calculated using the formula. (1/n * sum [√(x² + y² + z
 Initially we calculated global maxima for each axis acceleration. Selected all the other local maximum who has value more than 90% of global maxima. Then average of all such values are taken.</p>
 
 
-## 6. **Algorithms**
+## **Algorithms**
 
 ### Naive Bayes Classification 
 *   Implementation of Naive Bayes using Spark from scratch.
@@ -72,7 +76,7 @@ Initially we calculated global maxima for each axis acceleration. Selected all t
 </p>
 
 
-## 8,9.**Results**
+## **Results**
 
 ### Phone Accelerometer
 ---------------- Classification Using Decision Tree ----------------
@@ -178,15 +182,13 @@ Weighted false positive rate = 0.048698
 
 Confusion matrix:
 
-64.0  47.0   169.0  2.0    54.0
-
-13.0  280.0  6.0    0.0    1.0
-
-38.0  2.0    208.0  3.0    49.0
-
-18.0  5.0    21.0   207.0  65.0
-
-12.0  7.0    34.0   32.0   227.0
+|  1   |  2   |  3   |  4   |  5   |
+| --- | --- | --- | --- | --- |
+|**1**|64.0 | 47.0  | 169.0 | 2.0  |  54.0
+|**2**|13.0 | 280.0 | 6.0  |  0.0  |  1.0
+|**3**|38.0 | 2.0  |  208.0 | 3.0  |  49.0
+|**4**|18.0 | 5.0  |  21.0  | 207.0 | 65.0
+|**5**|12.0 | 7.0 |   34.0  | 32.0 |  227.0
 
 Accuracy = 63.04347826086957
 
@@ -227,25 +229,20 @@ Weighted false positive rate = 0.091249
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
 * Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark.
 
-## Project Outcome**
-* Learnt to implement classification algorithm in spark. 
-* Gained Hands on experience with Spark MLib, Dataset API.
-* Learnt classification using raw sensor data.
-
-## Work division**
+## **Work division**
 Umesh:
-* Feature Selection and research
+* Research
 * Data Preprocessing
 * Report writing
 
 Jitesh:
-* Feature Selection and research
+* Research
 * Classification 
 * Report writing
 
 ## 13.**References**
-1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
+1.[Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjj3Pf2lZ3mAhVHmlkKHWqDDTgQFjABegQIBhAC&url=https%3A%2F%2Farchive.ics.uci.edu%2Fml%2Fmachine-learning-databases%2F00507%2FWISDM-dataset-description.pdf&usg=AOvVaw205XSY4Ai9oYhPE68gZJ2_)
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
 
-3. [Naive Bayes Classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
+3.[Naive Bayes Classifier](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
