@@ -308,7 +308,7 @@ Please find below list of different softwares we have used for this project
 * Gained Hands on experience with Spark MLib, Dataset api 
 * Learnt classification using raw sensor data
 
-12.**Work division**
+## 12.**Work division**
 
 Umesh:
 * Feature Selection and research
@@ -320,9 +320,10 @@ Jitesh:
 * Classification 
 * Report writing
 
-13.**References**
+## 13.**References**
 
 1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
+
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
 
 
