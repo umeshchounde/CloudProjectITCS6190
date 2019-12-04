@@ -1,11 +1,13 @@
-## Title: Human Activity Recognition using Smartphone and Smartwatch Sensor Data
+## 1.Title: Human Activity Recognition using Smartphone and Smartwatch Sensor Data
 
-Project Group:
+2.Project Group:
 
 Umesh Chounde	801075505
 Jitesh Golatkar	801073392
 
-4.Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
+4.Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generates larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for dissabled people. 
+
+3.In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognise human activity like walking, jogging etc.
 
 5.WISDM dataset consist of raw accelerometer and gyroscope data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks.
 
@@ -19,29 +21,39 @@ Y axis accelaration describes upward and downward movement of body.
 Z axis accelaration describes forward movement of body.
 
 Feature Selection and Data Preparation:
-   We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. After thorough study and research we came up with following features might be helpful for building a model. 
+
+   We vizualised small set of data for each activity such as walking and jogging we came to know that accelaration of x, y, z axis plays an important role in differentiating the activities. We also considered peak values of accelarations that can help us differentiate activity, beacause jogging will be having most peak accelaration compared to walking and other activities. In the case of climbing up and down of stairs have periodic actions and we can detect those activities on the basis of activity periodicity. In case of normal activity such as sitting we get constant accelaration for long period.  After thorough study and research we came up with following features might be helpful for building a model. The given data is already sorted according to activity and timestamp of each activity.
     
 Average acceleration:    
-   We calculated average accelaration for each axis of the record
+   Each activity data records are divided in batches of 200 records. We calculated average accelaration for each axis of the record
    
 Variance:
-   We calculated variance of accelaration for each axis of the record
+   Each activity data records are divided in batches of 200 records. We calculated variance of accelaration for each axis of the record
    
 Average absolute difference:
-   We calculated average absolute differencee of accelaration for each axis of the record
+   We calculated average accelaration for each axis and took absolute difference with average accelaration. Average of this absolute difference is calculated again.
    
-Average resultant acceleration (1/n * sum [√(x² + y² + z²)])
+Average resultant acceleration:
+   Average resultant is calculated using the formula.(1/n * sum [√(x² + y² + z²)])
+   
 Average time between peaks (max) (Y-axis)
 
-Data Preparation methods
-Algorithms
-Software
-Performance evaluation
-Project goal achieved?
-Results
-Observations
-Work division
-References
+6.Algorithms
+
+7.Software
+
+9.Performance evaluation
+
+10.Project goal achieved?
+
+8.Results
+
+11.Observations
+
+12.Work division
+
+13.References
+
 code snipets
 
 
