@@ -67,7 +67,7 @@ Initially we used Decision Tree for classification of the activities.
 *   Save the mean and variance for each feature of a label into a text file as a trained model.
 *   Formula: 
 
-![](https://github.com/jgolatkar/CloudProjectITCS6190/blob/master/images/formula.PNG)
+<img src="{{ site.baseurl }}/images/formula.PNG">
 
 ## 8,9.**Results**
 
