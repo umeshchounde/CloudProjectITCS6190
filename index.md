@@ -7,8 +7,8 @@ Umesh Chounde
 Jitesh Golatkar
 
 ## 4. **Project Motivation**
-
-Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. We personally used such devices for tracking the activities. We felt that it would be interesting to know how it classify activities and we decided to implement the classification algorithm we studied in this course.
+<p align="justify">
+Today there are billions of people carrying smart devices such as smartphones, fitness gadgets, smartwatches. These sensor-rich gadgets generate larger amount of data that can be utilized using machine learning techniques and big data techniques for mining and deriving meaningful insights about human activity. Some of the common applications that are widely used are fitness trackers, and personal assistant systems for disabled people. We personally used such devices for tracking the activities. We felt that it would be interesting to know how it classify activities and we decided to implement the classification algorithm we studied in this course.</p>
 
 ## 3. **Dataset Information**
 In this project we are using such large dataset and process it using distributed computing frameworks like Spark. We are using couple of the classification algorithms in machine learning to recognize human activity like walking, jogging etc.
