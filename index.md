@@ -44,18 +44,30 @@ We calculated average accelaration for each axis and took absolute difference wi
 
 Average resultant is calculated using the formula.(1/n * sum [√(x² + y² + z²)])
    
-### Average time between peaks (max) (Y-axis)
+### Average time between peaks 
+
+Initially we calculated global maxima for each axis accelaration. Selected all the other local maximum who has value more than 90% of global maxima. Then average of all such values are taken.
 
 
-6.Algorithms
+## 6.Algorithms
 
-7.Software
+### Decision Tree
 
-9.Performance evaluation
+Initially we used Decision Tree for classifiaction of the activities.
 
-10.Project goal achieved?
+### Naive Bayes Classification 
 
-8.Results
+## 8,9.Results and Performance evaluation
+
+## 10.Project goal achieved?
+
+## 7.Software
+
+Please find below list of different softwares we have used for this project
+1. Spark for data extraction, model training and evaluation 
+2. AWS EMR cluster for execution of the code
+3. Spark MLib library for Decision Tree algorithm
+
 
 11.Observations
 
