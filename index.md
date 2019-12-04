@@ -20,9 +20,9 @@ WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
 [DataSetLink](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
 The accelerometer form devices measures the accelaration in 3 dimessions, along with x axis, y axis and z axis. 
-X axis accelaration describes horizontal movement body. 
-Y axis accelaration describes upward and downward movement of body. 
-Z axis accelaration describes forward movement of body.
+* X axis accelaration describes horizontal movement body. 
+* Y axis accelaration describes upward and downward movement of body. 
+* Z axis accelaration describes forward movement of body.
 
 ## **Feature Selection and Data Preparation:**
 
@@ -281,59 +281,49 @@ Weighted F1 score = 0.610161
 Weighted false positive rate = 0.091249
 
 
-## 10.**Project goal achieved?**
+## 10.**Project Accomplisments**
+* Implemented Naive Bayes classification algorithm using Spark
+* Trained model using Decision Tree classifier in Spark MLib
+* Compared classification algorithms for activity classification
+
+## **Future Scope**
+* Improve Accruracy of classifier
+* Improve performance and time in data pre-processing stage
+* Determine better feature for sensor data
 
 ## 7.**Software**
 
 Please find below list of different softwares we have used for this project
-1. Spark for data extraction, model training and evaluation 
-2. AWS EMR cluster for execution of the code
-3. Spark MLib library for Decision Tree algorithm
+* Spark for data extraction, model training and evaluation 
+* AWS EMR cluster for execution of the code
+* Spark MLib library for Decision Tree algorithm
 
 
-11.**Observations**
+## 11.**Observations**
+* As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
+* Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark
+
+## **Project Outcome**
+* Learnt to implement classification algorithm in spark 
+* Gained Hands on experience with Spark MLib, Dataset api 
+* Learnt classification using raw sensor data
 
 12.**Work division**
 
+Umesh:
+* Feature Selection and research
+* Data Preprocessing
+* Report writing
+
+Jitesh:
+* Feature Selection and research
+* Classification 
+* Report writing
+
 13.**References**
 
-code snipets
+1.Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset
+2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
 
 
 
-
-You can use the [editor on GitHub](https://github.com/umeshchounde/CloudProjectITCS6190/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/umeshchounde/CloudProjectITCS6190/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
