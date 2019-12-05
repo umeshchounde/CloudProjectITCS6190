@@ -70,11 +70,9 @@ Initially we calculated global maxima for each axis acceleration. Selected all t
 <img src="{{ site.baseurl }}/images/formula.PNG">
 
 ### Decision Tree
-<p align="justify">
 *  Implemented Decision Tree using MLLib library.
     
    (https://spark.apache.org/docs/latest/ml-classification-regression.html#decision-trees)
-</p>
 
 
 ## **Results**
