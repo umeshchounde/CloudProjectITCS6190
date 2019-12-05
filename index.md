@@ -13,7 +13,7 @@ Today there are billions of people carrying smart devices such as smartphones, f
 ## **Dataset Information**
 <p align="justify">
 In this project we are the WISDM dataset released by WISDM (Wireless Sensor Data Mining) Lab in the Department of Computer and
-Information Science of Fordham Unversity. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. 
+Information Science of Fordham University. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. 
 We have only used accelerometer data for this project. The activities we explored are: Walking, Jogging, Stairs, Sitting, Standing. We stripped the readings for other activities.
 We use following label mappings for the activities during classification:
 </p>
