@@ -15,13 +15,12 @@ Today there are billions of people carrying smart devices such as smartphones, f
 In this project we are the WISDM dataset released by WISDM (Wireless Sensor Data Mining) Lab in the Department of Computer and
 Information Science of Fordham Unversity. WISDM dataset consists of raw accelerometer data collected from smartphones and smartwatches. This data is collected from 51 individuals who were assigned to execute 18 different tasks for 3 minutes. Each individual was had smartwatch and smartphone placed on them. There are total 15630426 instances consisting of 6 attributes (subject_id, activity, timestamp, x-reading, y-reading, z-reading). This is a labelled dataset, thus is suitable for classification tasks. The activities we explored are: Walking, Jogging, Stairs, Sitting, Standing.
 We use following label mappings for the activities during classification:
-
+</p>
 
 |  Walking   |  Jogging   |  Stairs   |  Sitting   |  Standing  |
 | --- | --- | --- | --- | --- |
 | 1.0 | 2.0 | 3.0 | 4.0 | 5.0 |
 
-</p>
 Dataset: 
 [WISDM Smartphone and Smartwatch Activity and Biometrics Dataset](http://archive.ics.uci.edu/ml/datasets/WISDM+Smartphone+and+Smartwatch+Activity+and+Biometrics+Dataset+)
 
@@ -226,7 +225,7 @@ Weighted false positive rate = 0.091249
 * AWS EMR cluster for execution of the code.
 * Spark MLib library for Decision Tree algorithm and Model Evaluation.
 
-## **Observations**
+## **Challenges**
 * As we have never worked on time series sensor data, it was challenging to decide which feature should be selected for classification.
 * Due the structure of raw data, we found challenging to improve performance of data preprocessing using spark.
 
@@ -241,7 +240,7 @@ Jitesh:
 * Classification 
 * Report writing
 
-## 13.**References**
+## **References**
 1.[Gary M. Weiss, WISDM Smartphone and Smartwatch Activity and Biometrics Dataset](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwjj3Pf2lZ3mAhVHmlkKHWqDDTgQFjABegQIBhAC&url=https%3A%2F%2Farchive.ics.uci.edu%2Fml%2Fmachine-learning-databases%2F00507%2FWISDM-dataset-description.pdf&usg=AOvVaw205XSY4Ai9oYhPE68gZJ2_)
 
 2.Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore, [Activity Recognition using Cell Phone Accelerometers ](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
